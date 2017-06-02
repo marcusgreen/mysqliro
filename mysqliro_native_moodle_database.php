@@ -1,9 +1,16 @@
 <?php
 
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 30/05/2017
+ * Time: 17:08
+ */
 defined('MOODLE_INTERNAL') || die();
 
 require_once(__DIR__.'/moodle_database.php');
 require_once(__DIR__.'/mysqli_native_moodle_recordset.php');
+require_once(__DIR__.'/mysqli_native_moodle_database.php');
 require_once(__DIR__.'/mysqli_native_moodle_temptables.php');
 class mysqliro_native_moodle_database extends mysqli_native_moodle_database
 {
@@ -19,7 +26,12 @@ class mysqliro_native_moodle_database extends mysqli_native_moodle_database
             'backup_ids_temp',
             'backup_courses',
             'files',
-            'question_categories'
+            'question_categories',
+            'question_attempts',
+            'question_attempt_steps',
+            'question_attempt_step_data',
+            'question_usages',
+            'quiz_attempts'
         );
         return $writabletables;
     }
