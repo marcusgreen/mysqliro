@@ -6,7 +6,7 @@ Update config.php to use this instead of standard mysqli as
 $CFG->dbtype    = 'mysqliro';
 
 Copy the file to 
-    moodleroot/lib/tml
+    ```moodleroot/lib/tml
     
 
 
