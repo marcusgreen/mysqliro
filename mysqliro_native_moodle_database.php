@@ -16,9 +16,10 @@
 
 /**
  * Native mysqli read only class representing moodle database interface.
+ * Credit for inspiration and work from https://github.com/hitteshahuja
  *
  * @package    core_dml
- * @copyright  2018 Marcus Green
+ * @copyright  2018 Marcus Green 
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 defined('MOODLE_INTERNAL') || die();
